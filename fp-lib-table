@@ -1,0 +1,5 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "digikey-kicad-library-master")(type "KiCad")(uri "C:/Users/ducvi/Documents/KiCad/8.0/kicad libraries/digikey-kicad-library-master")(options "")(descr ""))
+  (lib (name "digikey-footprints")(type "KiCad")(uri "C:/Users/ducvi/Documents/KiCad/8.0/kicad libraries/digikey-kicad-library-master/digikey-footprints.pretty")(options "")(descr ""))
+)
