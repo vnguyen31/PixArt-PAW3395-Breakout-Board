@@ -1451,102 +1451,6 @@
 				)
 			)
 		)
-		(symbol "power:GND"
-			(power)
-			(pin_numbers hide)
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "GND"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "GND_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "GND_1_1"
-				(pin power_in line
-					(at 0 0 270)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "power:GNDREF"
 			(power)
 			(pin_numbers hide)
@@ -1765,12 +1669,6 @@
 		(uuid "6ecd2e54-b566-4dc3-90be-1534f9b19de1")
 	)
 	(junction
-		(at 130.81 77.47)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6f4006b1-263c-47be-97e9-6661a2f727c9")
-	)
-	(junction
 		(at 21.59 125.73)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1781,6 +1679,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8cd2bb51-f892-4dc3-966d-88a72fa84eed")
+	)
+	(junction
+		(at 130.81 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8d2b03f0-e9f3-4938-9970-fd6be97d84fc")
 	)
 	(junction
 		(at 88.9 125.73)
@@ -1897,6 +1801,22 @@
 		(uuid "ecf92659-6a25-4bd7-81f5-0275c26cea13")
 	)
 	(no_connect
+		(at 132.08 95.25)
+		(uuid "1d0a61f7-2f5b-4773-88dc-c5e51f727e44")
+	)
+	(no_connect
+		(at 156.21 95.25)
+		(uuid "61296ca6-c0b0-4278-b6d6-0b39024b6baf")
+	)
+	(no_connect
+		(at 132.08 99.06)
+		(uuid "72e06535-afee-48a0-82e0-e74e1df898e6")
+	)
+	(no_connect
+		(at 132.08 114.3)
+		(uuid "cd45de69-d0e4-41c7-b199-0e8d8b8b7c87")
+	)
+	(no_connect
 		(at 156.21 102.87)
 		(uuid "d5c0d354-5aaa-4877-9c7e-a4a41781fc71")
 	)
@@ -1983,6 +1903,16 @@
 			(type default)
 		)
 		(uuid "0e7bc27a-7238-45ca-b088-7a2a38344263")
+	)
+	(wire
+		(pts
+			(xy 130.81 77.47) (xy 130.81 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11f7300b-8e64-41df-b69b-df8f6e8285cc")
 	)
 	(wire
 		(pts
@@ -2676,16 +2606,6 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 77.47) (xy 130.81 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bf407824-7f62-4e4f-b7af-e61fb61d0cdd")
-	)
-	(wire
-		(pts
 			(xy 38.1 157.48) (xy 38.1 160.02)
 		)
 		(stroke
@@ -3361,6 +3281,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GNDREF")
+		(at 127 128.27 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0150e896-7892-4439-88d6-10dff3b00ff9")
+		(property "Reference" "#PWR01"
+			(at 127 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDREF"
+			(at 127 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 127 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 127 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDREF\" , reference supply ground"
+			(at 127 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2b7baaca-782f-4f1b-8e85-2063a34ee31b")
+		)
+		(instances
+			(project "paw3395 breakout board"
+				(path "/7fe1407e-68b6-43be-ac6f-b84a3ccc43f5"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_US")
 		(at 82.55 165.1 270)
 		(unit 1)
@@ -3491,73 +3477,6 @@
 			(project "paw3395 breakout board"
 				(path "/7fe1407e-68b6-43be-ac6f-b84a3ccc43f5"
 					(reference "C1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 130.81 77.47 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0dda564f-5871-4306-8542-5cc379cc4770")
-		(property "Reference" "#PWR02"
-			(at 137.16 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 134.62 77.4699 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 130.81 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 130.81 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 130.81 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "604ab22b-c5b5-420c-8dfb-5c1bed571239")
-		)
-		(instances
-			(project "paw3395 breakout board"
-				(path "/7fe1407e-68b6-43be-ac6f-b84a3ccc43f5"
-					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -3768,6 +3687,73 @@
 			(project "paw3395 breakout board"
 				(path "/7fe1407e-68b6-43be-ac6f-b84a3ccc43f5"
 					(reference "C10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDREF")
+		(at 130.81 77.47 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "25261e8a-64cb-457f-91ef-1b5e4f8213f6")
+		(property "Reference" "#PWR02"
+			(at 137.16 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDREF"
+			(at 134.62 77.4699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 130.81 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 130.81 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDREF\" , reference supply ground"
+			(at 130.81 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b33873f7-c604-420e-b895-aa45a322ef3f")
+		)
+		(instances
+			(project "paw3395 breakout board"
+				(path "/7fe1407e-68b6-43be-ac6f-b84a3ccc43f5"
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -4180,6 +4166,73 @@
 			(project "paw3395 breakout board"
 				(path "/7fe1407e-68b6-43be-ac6f-b84a3ccc43f5"
 					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDREF")
+		(at 156.21 83.82 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4ead7d89-8184-4938-8b7d-8ed35dc20dc9")
+		(property "Reference" "#PWR011"
+			(at 149.86 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GNDREF"
+			(at 152.4 83.8199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 156.21 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 156.21 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDREF\" , reference supply ground"
+			(at 156.21 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9c243755-028c-4aff-8423-90b76bc71ae1")
+		)
+		(instances
+			(project "paw3395 breakout board"
+				(path "/7fe1407e-68b6-43be-ac6f-b84a3ccc43f5"
+					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -4859,73 +4912,6 @@
 			(project "paw3395 breakout board"
 				(path "/7fe1407e-68b6-43be-ac6f-b84a3ccc43f5"
 					(reference "C12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 156.21 83.82 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8c1209ed-6b8c-4372-b4c8-f7d58f70f27d")
-		(property "Reference" "#PWR011"
-			(at 149.86 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 152.4 83.8199 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 156.21 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 156.21 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 156.21 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e69c30c5-87d9-4aa5-b97a-8acc00650033")
-		)
-		(instances
-			(project "paw3395 breakout board"
-				(path "/7fe1407e-68b6-43be-ac6f-b84a3ccc43f5"
-					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -5649,7 +5635,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_PinSocket_1.00mm:PinSocket_1x06_P1.00mm_Vertical"
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical"
 			(at 26.67 88.9 0)
 			(effects
 				(font
@@ -6076,7 +6062,7 @@
 				)
 			)
 		)
-		(property "Footprint" "motion sensor:PMW3360"
+		(property "Footprint" "PixArt Motion Sensors:PMW3360"
 			(at 144.145 91.44 0)
 			(effects
 				(font
@@ -6220,72 +6206,6 @@
 			(project "paw3395 breakout board"
 				(path "/7fe1407e-68b6-43be-ac6f-b84a3ccc43f5"
 					(reference "#PWR015")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 127 128.27 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f8431c6a-2fad-4418-b415-3f0bf87ae7db")
-		(property "Reference" "#PWR01"
-			(at 127 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 127 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 127 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 127 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 127 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ac2b89f9-782d-4c39-a5a6-39637e52309c")
-		)
-		(instances
-			(project "paw3395 breakout board"
-				(path "/7fe1407e-68b6-43be-ac6f-b84a3ccc43f5"
-					(reference "#PWR01")
 					(unit 1)
 				)
 			)
